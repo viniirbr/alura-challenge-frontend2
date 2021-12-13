@@ -1,0 +1,235 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body {
+	background: #051D3B;
+	font-family: "Inter", sans-serif;
+}
+
+.cabecalho-principal {
+	margin-top: 30px;
+}
+
+.cabecalho-principal .container{
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	align-items: center;
+}
+
+.logo {
+	width: 15%;
+}
+
+.pesquisa {	
+	background-color: rgba(255,255,255,0.3);
+	height: 100%;
+	border:none;
+	border-radius: 5px;
+	padding: 5px 5px;
+	font-size: 15px;
+	color: #bbb;
+	width: 50%;
+}
+
+.pesquisa:focus {
+	outline: none;
+}
+
+.foto-perfil {
+	width: 15%;
+}
+
+.menu {
+	color: #bbb;
+	width: 20%;
+	letter-spacing: 5px;
+	font-size: 0.9em;
+	margin-left: 10px;
+	justify-content: space-around;
+	height: 200px;
+}
+
+ul .menu-itens {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	color: #bbb;
+	letter-spacing: 5px;
+	font-size: 0.8em;
+	font-weight: normal;
+
+}
+
+ul {
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+li {
+	margin-top: 10px;
+}
+.editor-item {
+	display: flex;
+	align-items: center;
+}
+
+.comunidade-item {
+	display: flex;
+	align-items: center;
+	opacity: 60%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	color: #bbb;
+}
+
+.icon-menu {
+	background: #5081FB;
+	border-radius: 10px;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+}
+
+.title-menuitems {
+	letter-spacing: 1px;
+	margin-left: 10px;
+}
+
+
+.editor-container {
+	display: flex;
+	width: 50%;
+	height: 360px;
+}
+
+.fundo-editor {
+	background: #6BD1FF;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.botao-visualizarMarcacao {
+	width: 100%;
+	margin-top: 30px;
+	height: 40px;
+	background-color: rgba(255,255,255,0.1);
+	border: none;
+	border-radius: 5px;
+	color: #eee;
+	cursor: pointer;
+}
+
+.fundo-editor .editor-codigo {
+	width: 90%;
+	height: 80%;
+	background-color: black;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	margin: 35px 30px;
+	resize: none;
+	padding: 20px;
+	font-size: 1.1em;
+}
+
+.editor-codigo::before {
+	content: url("mac_buttons.svg");
+	margin-left: 16px;
+    margin-top: 16px;
+}
+
+.editor-codigo:focus {
+	outline: none;
+	box-shadow: 5px 5px 10px #505050;
+}
+
+.conteudo-principal {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	margin-top: 40px;
+}
+
+.configuracoes-projeto {
+	display: flex;
+	flex-direction: column;
+	height: 530px;
+	width: 20%;
+	margin-right: 10px;
+}
+
+.nome-projeto {
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+	border-radius: 5px;
+	padding: 5px 5px;
+	font-size: 15px;
+	color: #bbb;
+	height: 20%;
+	height: 10%;
+}
+
+.descricao-projeto {
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+	border-radius: 5px;
+	padding: 5px 5px;
+	font-size: 15px;
+	color: #bbb;
+	height: 35%;
+	margin-top: 15px;
+	resize: none;
+	height: 15%;
+}
+
+.titulo-personalizacao {
+	margin-top: 30px;
+}
+
+.personalizacao-select {
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+	border-radius: 5px;
+	padding: 5px 5px;
+	font-size: 15px;
+	color: #bbb;
+	height: 20%;
+	color: #bbb;
+	height: 10%;
+}
+
+.personalizacao-select option {
+	color: black;
+}
+
+.input-color {
+	width: 100%;
+	margin-top: 15px;
+	height: 10%;
+	border-radius: 5px;
+	background-color: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.botao-salvar {
+	margin-top: 30px;
+	border-radius: 5px;
+	background: #5081FB;
+	color: black;
+	height: 10%;
+	border:none;
+	cursor: pointer;
+}
+
