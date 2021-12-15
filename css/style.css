@@ -9,101 +9,6 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
-.cabecalho-principal {
-	margin-top: 30px;
-}
-
-.cabecalho-principal .container{
-	display: flex;
-	justify-content: space-between;
-	height: 40px;
-	align-items: center;
-}
-
-.logo {
-	width: 15%;
-}
-
-.pesquisa {	
-	background-color: rgba(255,255,255,0.3);
-	height: 100%;
-	border:none;
-	border-radius: 5px;
-	padding: 5px 5px;
-	font-size: 15px;
-	color: #bbb;
-	width: 50%;
-}
-
-.pesquisa:focus {
-	outline: none;
-}
-
-.foto-perfil {
-	width: 15%;
-}
-
-.menu {
-	color: #bbb;
-	width: 20%;
-	letter-spacing: 5px;
-	font-size: 0.9em;
-	margin-left: 10px;
-	justify-content: space-around;
-	height: 200px;
-}
-
-ul .menu-itens {
-	display: flex;
-	flex-direction: column;
-}
-
-h2 {
-	color: #bbb;
-	letter-spacing: 5px;
-	font-size: 0.8em;
-	font-weight: normal;
-
-}
-
-ul {
-	padding-left: 0px;
-	margin-top: 0px;
-}
-
-li {
-	margin-top: 10px;
-}
-.editor-item {
-	display: flex;
-	align-items: center;
-}
-
-.comunidade-item {
-	display: flex;
-	align-items: center;
-	opacity: 60%;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-	color: #bbb;
-}
-
-.icon-menu {
-	background: #5081FB;
-	border-radius: 10px;
-	width: 40px;
-	height: 40px;
-	padding: 10px;
-}
-
-.title-menuitems {
-	letter-spacing: 1px;
-	margin-left: 10px;
-}
-
 
 .editor-container {
 	display: flex;
@@ -158,6 +63,11 @@ a {
 	border-radius: 5px;
 	color: #eee;
 	cursor: pointer;
+	transition: 0.5s all;
+}
+
+.botao-visualizarMarcacao:hover {
+	background-color: rgba(255,255,255,0.2);
 }
 
 .editor-codigo::before {
@@ -193,7 +103,7 @@ a {
 	padding: 5px 5px;
 	font-size: 15px;
 	color: #bbb;
-	height: 20%;
+	margin: 10px 0;
 	height: 10%;
 }
 
@@ -221,13 +131,14 @@ a {
 	padding: 5px 5px;
 	font-size: 15px;
 	color: #bbb;
-	height: 20%;
+	margin: 10px 0;
 	color: #bbb;
 	height: 10%;
 }
 
 .personalizacao-select option {
-	color: black;
+	color: #CCC;
+	background: #051D3B;
 }
 
 .input-color {
@@ -249,5 +160,23 @@ a {
 	height: 10%;
 	border:none;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.editor-container {
+		width: auto;
+		margin: 5px 10px;
+	}
 }
 
