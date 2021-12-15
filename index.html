@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>All Dev</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/seaside.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -46,8 +47,11 @@
 				<div class="fundo-editor">	
 					<div class="mac">
 						<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">	
+					</div>
+					<div class="codigo-wrapper">
+						<code class="editor-codigo hljs" contenteditable="true">Digite seu código aqui...</code>
 					</div>	
-					<textarea class="editor-codigo" type="text" name="texto" autocomplete="off">Digite seu código aqui...</textarea>
+					<!--<textarea class="editor-codigo" type="text" name="texto" autocomplete="off">Digite seu código aqui...</textarea>-->
 				</div>
 				<input class="botao-visualizarMarcacao" type="submit" name="visualizar-marcacoes" value="Visualizar com o highlight">
 			</div>
@@ -66,7 +70,7 @@
 			</form>
 			<script type="text/javascript" src="index.js"></script>
 		</main>
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 	</body>
 
 </html>

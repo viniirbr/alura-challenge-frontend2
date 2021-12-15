@@ -40,7 +40,7 @@ body {
 	padding: 2rem;
 }
 
-.fundo-editor .editor-codigo {
+.fundo-editor .editor-codigo, .codigo-wrapper {
 	width: 100%;
 	height: 100%;
 	background-color: black;
@@ -50,9 +50,16 @@ body {
 	display: block;
 	margin: 0 auto;
 	resize: none;
-	padding: 20px;
+	padding: 5px;
 	font-size: 1.1em;
 }
+
+.editor-codigo {
+	white-space: pre-wrap;
+}
+
+
+
 
 .botao-visualizarMarcacao {
 	width: 100%;
