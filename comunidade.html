@@ -8,6 +8,7 @@
 	<title>All Dev</title>
 	<script src="https://kit.fontawesome.com/467b64bc8b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -17,28 +18,30 @@
 	</head>
 
 	<body>
-		<header class="cabecalho-principal">
-			<div class="container">
-				<img class="logo" src="img/logo.png" alt="Logotipo da All Dev">
-				<input class="pesquisa" type="text" name="pesquisa" placeholder="Busque por algo">
-				<img class="foto-perfil" src="img/foto-perfil.png" alt="Foto de perfil do usuário">			
-			</div>		
+		<header class="cabecalho">
+			<img class="cabecalho__logo" src="img/logo.png" alt="Logotipo da All Dev">
+			<input class="cabecalho__pesquisa-input text-input" type="text" name="pesquisa" placeholder="Busque por algo">
+			<img class="cabecalho__perfil" src="img/foto-perfil.png" alt="Foto de perfil do usuário">
+			<div class="cabecalho__botoes">
+				<img src="img/pesquisar.png" class="cabecalho__pesquisar-botao" alt="">
+				<img src="img/menu-sanduiche.png" class="cabecalho__menu-botao" alt="">
+			</div>					
 		</header>
 
 		<main class="comunidade-principal">
 			<nav class="menu">
-				<h2 class="menu-title">MENU</h2>
-				<ul class="menu-items">
-					<a href="index.html">
-						<li class="editor-item-comunidade">
+				<h2 class="menu__titulo sidebar-titulo">MENU</h2>
+				<ul class="menu__itens">
+					<a href="index.html" editor-button>
+						<li class="menu__editor-item">
 							<img class="icon-menu" src="img/icon_code.png">
-							<p class="title-menuitems">Editor de código</p>
+							<p class="menu__editor-item-titulo menu__item-name">Editor de código</p>
 						</li>
 					</a>
-					<a href="comunidade.html">
-						<li class="comunidade-item-comunidade">
+					<a href="comunidade.html" comunidade-buttom>
+						<li class="menu__comunidade-item">
 							<img class="icon-menu" src="img/icon_users.png">
-							<p class="title-menuitems">Comunidade</p>
+							<p class="menu__editor-item-titulo menu__item-name">Comunidade</p>
 						</li>
 					</a> 
 				</ul>	
@@ -76,7 +79,7 @@
 					</div>
 				</li>
 				<li class="projeto-item">
-					<div class="codigo-container">
+					<div class="codigo-container cartao1">
 						<div class="macbuttons-editor">
 							<div class="mac">
 							<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">
@@ -107,7 +110,7 @@
 					</div>
 				</li>
 				<li class="projeto-item">
-					<div class="codigo-container">
+					<div class="codigo-container cartao2">
 						<div class="macbuttons-editor">
 							<div class="mac">
 							<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">
@@ -138,7 +141,7 @@
 					</div>
 				</li>
 				<li class="projeto-item">
-					<div class="codigo-container">
+					<div class="codigo-container cartao3">
 						<div class="macbuttons-editor">
 							<div class="mac">
 							<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">

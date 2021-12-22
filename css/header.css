@@ -1,34 +1,69 @@
-.cabecalho-principal {
-	margin-top: 30px;
-}
-
-.cabecalho-principal .container{
+.cabecalho{
 	display: flex;
 	justify-content: space-between;
 	height: 40px;
+	margin-top: 30px;
 	align-items: center;
 }
 
-.logo {
+.cabecalho__logo {
 	width: 15%;
+	min-width: 130px;
+	max-width: 200px;
 }
 
-.pesquisa {	
-	background-color: rgba(255,255,255,0.3);
-	height: 100%;
-	border:none;
-	border-radius: 5px;
-	padding: 5px 5px;
-	font-size: 15px;
-	color: #bbb;
+.cabecalho__pesquisa-input {	
 	width: 50%;
 }
 
-.pesquisa:focus {
+.cabecalho__pesquisa-input:focus {
 	outline: none;
 }
 
-.foto-perfil {
-	width: 15%;
-	padding: 15px 15px;
+.cabecalho__perfil {
+	width: 20%;
+	padding-left: 100px;
 }
+
+.cabecalho__botoes {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.cabecalho__botoes {
+		display: inline-block;
+	}
+
+	.cabecalho__pesquisar-botao {
+		display: none;
+	}
+
+	.cabecalho__logo {
+		width: 40%;
+	}
+
+	.cabecalho__perfil {
+		display: none;
+	}
+
+	.cabecalho__menu-botao {
+		display: inline-block;
+	}
+
+	.cabecalho__menu-botao {
+		margin: auto 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.cabecalho__pesquisar-botao {
+		display: inline-block;
+		margin: auto 20px;
+	}
+
+	.cabecalho__pesquisa-input {
+		display: none;
+	}
+}
+
+

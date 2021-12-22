@@ -4,9 +4,10 @@
 
 	<head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<title>All Dev</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/seaside.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/menu.css">
@@ -16,34 +17,35 @@
 	</head>
 
 	<body>
-		<header class="cabecalho-principal">
-			<div class="container">
-				<img class="logo" src="img/logo.png" alt="Logotipo da All Dev">
-				<input class="pesquisa" type="text" name="pesquisa" placeholder="Busque por algo">
-				<img class="foto-perfil" src="img/foto-perfil.png" alt="Foto de perfil do usuário">			
-			</div>		
+		<header class="cabecalho">
+			<img class="cabecalho__logo" src="img/logo.png" alt="Logotipo da All Dev">
+			<input class="cabecalho__pesquisa-input text-input" type="text" name="pesquisa" placeholder="Busque por algo">
+			<img class="cabecalho__perfil" src="img/foto-perfil.png" alt="Foto de perfil do usuário">
+			<div class="cabecalho__botoes">
+				<img src="img/pesquisar.png" class="cabecalho__pesquisar-botao" alt="">
+				<img src="img/menu-sanduiche.png" class="cabecalho__menu-botao" alt="">
+			</div>					
 		</header>
 
 		<main class="conteudo-principal">
 			<nav class="menu">
-				<h2 class="menu-title">MENU</h2>
-				<ul class="menu-items">
+				<h2 class="menu__titulo sidebar-titulo">MENU</h2>
+				<ul class="menu__itens">
 					<a href="index.html" editor-button>
-						<li class="editor-item-index">
+						<li class="menu__editor-item">
 							<img class="icon-menu" src="img/icon_code.png">
-							<p class="title-menuitems">Editor de código</p>
+							<p class="menu__editor-item-titulo menu__item-name">Editor de código</p>
 						</li>
 					</a>
 					<a href="comunidade.html" comunidade-buttom>
-						<li class="comunidade-item-index">
+						<li class="menu__comunidade-item">
 							<img class="icon-menu" src="img/icon_users.png">
-							<p class="title-menuitems">Comunidade</p>
+							<p class="menu__editor-item-titulo menu__item-name">Comunidade</p>
 						</li>
 					</a> 
-				
 				</ul>	
 			</nav>
-			<div class="editor-container">
+			<section class="editor-container">
 				<div class="fundo-editor">	
 					<div class="mac">
 						<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">	
@@ -54,18 +56,27 @@
 					<!--<textarea class="editor-codigo" type="text" name="texto" autocomplete="off">Digite seu código aqui...</textarea>-->
 				</div>
 				<input class="botao-visualizarMarcacao" type="submit" name="visualizar-marcacoes" value="Visualizar com o highlight">
-			</div>
+			</section>
 			<form class="configuracoes-projeto">
-				<h2 class="titulo-seuprojeto">SEU PROJETO</h2>	
-				<input class="nome-projeto" type="text" name="nome-projeto" placeholder="Nome do seu projeto">
-				<textarea class="descricao-projeto" type="text" name="descricao-projeto" placeholder="Descrição do seu projeto"></textarea>
-				<h2 class="titulo-personalizacao">PERSONALIZAÇÃO</h2>	
-				<select class="personalizacao-select" name="linguagem">
-					<option value="javascript" selected>JavaScript</option>
-					<option value="html">HTML</option>
-					<option value="css">CSS</option>		
-				</select>
-				<input  class="input-color" type="color" data-input="color" value="#6BD1FF">	
+				<section class="seuProjeto container-config">
+					<h2 class="seuProjeto__titulo sidebar-titulo">SEU PROJETO</h2>	
+					<section class="seuProjeto__inputs configuracao__input-container">
+						<input class="seuProjeto__nome text-input" type="text" name="nome-projeto" placeholder="Nome do seu projeto">
+						<textarea class="seuProjeto__descricao text-input" type="text" name="descricao-projeto" 
+						placeholder="Descrição do seu projeto"></textarea>
+					</section>
+				</section>
+				<section class="personalizacao container-config">
+					<h2 class="personalizacao__titulo sidebar-titulo">PERSONALIZAÇÃO</h2>	
+					<section class="personalizacao__inputs configuracao__input-container">
+						<select class="personalizacao__select text-input" name="linguagem">
+							<option value="javascript" selected>JavaScript</option>
+							<option value="html">HTML</option>
+							<option value="css">CSS</option>		
+						</select>
+						<input  class="input-color" type="color" data-input="color" value="#6BD1FF">
+					</section>
+				</section>	
 				<input  class="botao-salvar" type="submit" value="Salvar projeto">
 			</form>
 			<script type="text/javascript" src="index.js"></script>
