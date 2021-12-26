@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>All Dev</title>
+	<link rel="stylesheet" type="text/css" href="css/seaside.css">
 	<script src="https://kit.fontawesome.com/467b64bc8b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/base.css">
@@ -73,23 +74,30 @@
 					</a> 
 				</ul>	
 			</nav>
-			<ul class="projetos-container">
-				<li class="projeto-item">
+			<ul class="projetos">
+				<li class="projeto__item">
 					<div class="codigo-container cartao1">
-						<div class="macbuttons-editor">
+						<div class="projeto__editor">
 							<div class="mac">
 							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
-						</div>
-						<pre><code class="editor-codigo hljs javascript language-javascript">const const
-							const
-							const
-							const
-						</code></pre>
-						</pre>			
+							</div>
+							<div class="editor__wrapper">
+								<pre><code class="editor__codigo hljs javascript language-javascript">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+const unfold = (f, seed) => {
+const go = (f, seed, acc) => {
+const res = f(seed)
+return res ? go(f, res[1], acc.concat([res[0]])) : acc
+}
+return go(f, seed, [])
+}
+							</code></pre>	
+							</div>
+						</div>		
 						</div>
 					</div>
 					<div class="info-projeto">
-						<h2 class="titulo-projeto"> Sem título</h2>
+						<h2 class="titulo-projeto"> Projeto em JavaScript</h2>
 						<p class="descricao-projeto">Essa é a descrição do meu projeto.</p>
 					</div>
 					<div class="social-projeto">
@@ -110,27 +118,27 @@
 					</div>
 					</div>
 				</li>
-				<li class="projeto-item">
-					<div class="codigo-container cartao2">
-						<div class="macbuttons-editor">
+				<li class="projeto__item">
+					<div class="codigo-container cartao1">
+						<div class="projeto__editor">
 							<div class="mac">
 							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
-						</div>
-						<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+							</div>
+							<div class="editor__wrapper">
+								<pre><code class="editor__codigo hljs css">div {
+	color: #ffffff
+	border-radius: 5px;
+	margin: 30px auto;
+	}
 
-							const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-							
-							const unfold = (f, seed) => {
-							  const go = (f, seed, acc) => {
-								const res = f(seed)
-								return res ? go(f, res[1], acc.concat([res[0]])) : acc
-							  }
-							  return go(f, seed, [])
-							}</code>					
+
+					</code></pre>	
+							</div>
+						</div>		
 						</div>
 					</div>
 					<div class="info-projeto">
-						<h2 class="titulo-projeto"> Sem título</h2>
+						<h2 class="titulo-projeto"> Projeto em CSS</h2>
 						<p class="descricao-projeto">Essa é a descrição do meu projeto.</p>
 					</div>
 					<div class="social-projeto">
@@ -151,27 +159,27 @@
 					</div>
 					</div>
 				</li>
-				<li class="projeto-item">
-					<div class="codigo-container cartao3">
-						<div class="macbuttons-editor">
+				<li class="projeto__item">
+					<div class="codigo-container cartao1">
+						<div class="projeto__editor">
 							<div class="mac">
 							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
-						</div>
-						<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-							const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-							
-							const unfold = (f, seed) => {
-							  const go = (f, seed, acc) => {
-								const res = f(seed)
-								return res ? go(f, res[1], acc.concat([res[0]])) : acc
-							  }
-							  return go(f, seed, [])
-							}</code>					
+							</div>
+							<div class="editor__wrapper">
+								<pre><code class="editor__codigo hljs html">&lt;nav class='navegacao'&gt;
+	&lt;ul&gt;
+		&lt;li&gt;HOME&lt;/li&gt;
+		&lt;li&gt;DESTAQUES&lt;/li&gt;
+		&lt;li&gt;SOBRE&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+							</code></pre>	
+							</div>
+						</div>		
 						</div>
 					</div>
 					<div class="info-projeto">
-						<h2 class="titulo-projeto"> Sem título</h2>
+						<h2 class="titulo-projeto"> Projeto em HTML</h2>
 						<p class="descricao-projeto">Essa é a descrição do meu projeto.</p>
 					</div>
 					<div class="social-projeto">
@@ -192,27 +200,34 @@
 					</div>
 					</div>
 				</li>
-				<li class="projeto-item">
-					<div class="codigo-container cartao4">
-						<div class="macbuttons-editor">
+				<li class="projeto__item">
+					<div class="codigo-container cartao1">
+						<div class="projeto__editor">
 							<div class="mac">
 							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
-						</div>
-						<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-							const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-							
-							const unfold = (f, seed) => {
-							  const go = (f, seed, acc) => {
-								const res = f(seed)
-								return res ? go(f, res[1], acc.concat([res[0]])) : acc
-							  }
-							  return go(f, seed, [])
-							}</code>					
+							</div>
+							<div class="editor__wrapper">
+								<pre><code class="editor__codigo hljs javascript language-javascript">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+const unfold = (f, seed) => {
+const go = (f, seed, acc) => {
+const res = f(seed)
+return res ? go(f, res[1], acc.concat([res[0]])) : acc
+}
+return go(f, seed, [])
+}
+div {
+	color: #ffffff
+	border-radius: 5px;
+	margin: 30px auto;
+	}
+							</code></pre>	
+							</div>
+						</div>		
 						</div>
 					</div>
 					<div class="info-projeto">
-						<h2 class="titulo-projeto"> Sem título</h2>
+						<h2 class="titulo-projeto"> Projeto em JavaScript</h2>
 						<p class="descricao-projeto">Essa é a descrição do meu projeto.</p>
 					</div>
 					<div class="social-projeto">

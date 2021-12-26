@@ -4,7 +4,7 @@
 	margin-top: 40px;
 }
 
-.projetos-container {
+.projetos {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -12,11 +12,11 @@
 	margin-right: 30px;
 }
 
-.projeto-item {
+.projeto__item {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 500px;
+	height: calc(100vh - 150px);
 	width: 49%;
 	background-color: rgba(0,0,0,0.16);
 	border-radius: 8px;
@@ -28,15 +28,18 @@
 }
 
 .codigo-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
 	border-radius: 8px;
 	width: 100%;
 	height: 70%;
 	background-color: #9AFF6B;
-	overflow-y: auto;
+}
+
+.projeto__editor {
+	background-color: #292936;
+	margin: 25px;
+	height: 77%;
+	border-radius: 5px 5px 0 0;
+	
 }
 
 .cartao1 {
@@ -49,19 +52,10 @@
 	background-color: #FF6BCD;
 }
 
-.macbuttons-editor {
-	display: flex;
-	flex-direction: column;
-	width: 90%;
-	height: 90%;
-	padding: 10px 5px 10px 5px;
-}
-
 .mac {
 	width: 100%;
 	height: 10%;
 	background: #292936;
-	border-radius: 5px 5px 0px 0px;
 }
 
 .mac-img {
@@ -70,17 +64,6 @@
 	height:13.33px;
 }
 
-code {
-	background: #292936;
-	align-items: center;
-	height: 90%;
-	width: 100%;
-	padding: 15px;
-	border-radius: 0 0 8px 8px;
-	border: none;
-	resize: none;
-	color: white;
-}
 
 .info-projeto {
 	height: 30%;
@@ -191,14 +174,14 @@ code {
 }
 
 @media screen and (max-width: 1024px) {
-	.projetos-container {
+	.projetos {
 		flex-direction: column;
 		width: 100%;
 		height: 80%;
 		margin: auto 10px;
 	}
 
-	.projeto-item {
+	.projeto__item {
 		width: 100%;
 		height: calc(100vh - 135px);
 	}
