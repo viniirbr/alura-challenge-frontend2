@@ -8,6 +8,7 @@
 
 .cabecalho__logo {
 	width: 15%;
+	padding: 0 20px;
 	min-width: 130px;
 	max-width: 200px;
 }
@@ -20,18 +21,56 @@
 	outline: none;
 }
 
-.cabecalho__perfil {
+.cabecalho__usuario {
 	width: 20%;
 	padding-left: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	padding-right: 20px;
+	gap: 10px;
+}
+
+.cabecalho__usuario-nome {
+	color: white;
+	letter-spacing: 1px;
+	font-size: 1.2em;
 }
 
 .cabecalho__botoes {
 	display: none;
 }
 
+.cabecalho__pesquisar-botao {
+	padding: 5px;
+	border-radius: 10px;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+
+.cabecalho__pesquisar-botao:hover {
+	background: rgba(200,200,200,0.5);
+}
+
+.cabecalho__menu-botao {
+	padding: 5px;
+	border-radius: 10px;
+	transition: 0.5s all;
+	cursor: pointer;
+	content: url(../img/menu-sanduiche.svg);
+}
+
+.cabecalho__menu-botao:hover {
+	background: rgba(200,200,200,0.5);
+}
+
+.cabecalho__menu-botao.close {
+	content: url(../img/close-icone.svg);
+}
+
 @media screen and (max-width: 1024px) {
 	.cabecalho__botoes {
-		display: inline-block;
+		display: flex;
 	}
 
 	.cabecalho__pesquisar-botao {
@@ -42,7 +81,7 @@
 		width: 40%;
 	}
 
-	.cabecalho__perfil {
+	.cabecalho__usuario {
 		display: none;
 	}
 
@@ -53,6 +92,7 @@
 	.cabecalho__menu-botao {
 		margin: auto 20px;
 	}
+
 }
 
 @media screen and (max-width: 400px) {

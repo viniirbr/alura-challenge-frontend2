@@ -12,33 +12,61 @@
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/comunidade.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>		
 	</head>
 
 	<body>
 		<header class="cabecalho">
-			<img class="cabecalho__logo" src="img/logo.png" alt="Logotipo da All Dev">
+			<img class="cabecalho__logo" src="img/logo.svg" alt="Logotipo da All Dev">
 			<input class="cabecalho__pesquisa-input text-input" type="text" name="pesquisa" placeholder="Busque por algo">
-			<img class="cabecalho__perfil" src="img/foto-perfil.png" alt="Foto de perfil do usuário">
+			<section class="cabecalho__usuario">
+				<img class="cabecalho__usuario-foto" src="img/foto-perfil.svg" alt="Foto de perfil do usuário">
+				<h2 class="cabecalho__usuario-nome">Harry</h2>
+			</section>
 			<div class="cabecalho__botoes">
-				<img src="img/pesquisar.png" class="cabecalho__pesquisar-botao" alt="">
-				<img src="img/menu-sanduiche.png" class="cabecalho__menu-botao" alt="">
+				<img src="img/pesquisar-icone.svg" class="cabecalho__pesquisar-botao" alt="">
+				<img src="img/menu-sanduiche.svg" class="cabecalho__menu-botao" alt="">
 			</div>					
 		</header>
+
+		<div class="sidebar">
+			<nav class="menu-itens">
+				<ul class="menu__itens">
+					<a href="index.html" editor-button>
+						<li class="menu__editor--index">
+							<img class="icon-menu" src="img/icon_code.png">
+							<p class="menu__editor-item-titulo menu__item-name">Editor de código</p>
+						</li>
+					</a>
+					<a href="comunidade.html" comunidade-buttom>
+						<li class="menu__comunidade--index">
+							<img class="icon-menu" src="img/icon_users.png">
+							<p class="menu__editor-item-titulo menu__item-name">Comunidade</p>
+						</li>
+					</a> 
+					<hr>
+					<section class="sidebar__usuario">
+						<img class="foto-perfil-mini" src="img/foto-perfil.svg">
+						<h2 class="sidebar__id-usuario">Harry</h2>
+					</section>
+				</ul>	
+			</nav>
+		</div>
 
 		<main class="conteudo-principal">
 			<nav class="menu">
 				<h2 class="menu__titulo sidebar-titulo">MENU</h2>
 				<ul class="menu__itens">
 					<a href="index.html" editor-button>
-						<li class="menu__editor-item">
+						<li class="menu__editor--index">
 							<img class="icon-menu" src="img/icon_code.png">
 							<p class="menu__editor-item-titulo menu__item-name">Editor de código</p>
 						</li>
 					</a>
 					<a href="comunidade.html" comunidade-buttom>
-						<li class="menu__comunidade-item">
+						<li class="menu__comunidade--index">
 							<img class="icon-menu" src="img/icon_users.png">
 							<p class="menu__editor-item-titulo menu__item-name">Comunidade</p>
 						</li>
@@ -48,7 +76,7 @@
 			<section class="editor-container">
 				<div class="fundo-editor">	
 					<div class="mac">
-						<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">	
+						<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">	
 					</div>
 					<div class="codigo-wrapper">
 						<code class="editor-codigo hljs" contenteditable="true">Digite seu código aqui...</code>
@@ -79,7 +107,8 @@
 				</section>	
 				<input  class="botao-salvar" type="submit" value="Salvar projeto">
 			</form>
-			<script type="text/javascript" src="index.js"></script>
+			<script type="text/javascript" src="javascript/index.js"></script>
+			<script type="text/javascript" src="javascript/cabecalhoBotoes.js"></script>
 		</main>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 	</body>

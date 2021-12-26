@@ -46,12 +46,20 @@ a li:hover {
 	letter-spacing: normal;
 }
 
-.menu__editor-item {
+.menu__editor--index {
 	opacity: 100%;
 }
 
-.menu__comunidade-item {
+.menu__comunidade--index {
 	opacity: 60%;
+}
+
+.menu__editor--comunidade {
+	opacity: 60%;
+}
+
+.menu__comunidade--comunidade {
+	opacity: 100%;
 }
 
 a {
@@ -68,9 +76,55 @@ a {
 	padding: 10px;
 }
 
+.sidebar {
+	display: none;
+}
+
+hr {
+	margin: 20px;
+	opacity: 20%;
+}
+
+.sidebar__usuario {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap:10px;
+	padding: 5px;
+	width: 100%;
+	border-radius: 5px;
+	transition: 0.5s all;
+}
+
+.sidebar__usuario:hover {
+	background: rgba(200,200,200,0.5);
+	cursor: pointer;
+}
+
+.sidebar__id-usuario {
+	letter-spacing: normal;
+	font-size: 100%;
+	color: #bbb;
+}
 
 @media screen and (max-width: 1024px) {
 	.menu {
 		display: none;
+	}
+
+	.sidebar {
+		height: 100vh;
+		width: 250px;
+		padding: 20px;
+		position: absolute;
+		right: 0;
+		margin-top: 20px;
+		background: #2D415B;
+		border-radius: 10px;
+		display: none;
+	}
+	
+	.sidebar.active {
+		display: block;
 	}
 }

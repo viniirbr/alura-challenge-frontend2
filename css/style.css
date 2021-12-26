@@ -9,7 +9,6 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
-
 .editor-container {
 	display: flex;
 	flex-direction: column;
@@ -55,6 +54,7 @@ body {
 
 .codigo-wrapper {
 	overflow-y: auto;
+	padding: 20px 0 0 20px;
 }
 
 .editor-codigo {
@@ -77,12 +77,6 @@ body {
 	background-color: rgba(255,255,255,0.2);
 }
 
-.editor-codigo::before {
-	content: url("mac_buttons.svg");
-	margin-left: 16px;
-    margin-top: 16px;
-}
-
 .editor-codigo:focus {
 	outline: none;
 }
@@ -96,7 +90,7 @@ body {
 .configuracoes-projeto {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	height: 530px;
 	width: 20%;
 	margin-right: 10px;
@@ -170,6 +164,16 @@ body {
 	height: 10%;
 	border:none;
 	cursor: pointer;
+	transition: 0.5s;
+}
+
+.botao-salvar:hover {
+	background: #7BA4FC;
+}
+
+.botao-salvar:focus {
+	outline: 3px solid #5081FB;
+
 }
 
 @media screen and (max-width: 1024px) {

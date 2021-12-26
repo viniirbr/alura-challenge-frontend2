@@ -14,32 +14,59 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/comunidade.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>		
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
 	</head>
 
 	<body>
 		<header class="cabecalho">
-			<img class="cabecalho__logo" src="img/logo.png" alt="Logotipo da All Dev">
+			<img class="cabecalho__logo" src="img/logo.svg" alt="Logotipo da All Dev">
 			<input class="cabecalho__pesquisa-input text-input" type="text" name="pesquisa" placeholder="Busque por algo">
-			<img class="cabecalho__perfil" src="img/foto-perfil.png" alt="Foto de perfil do usuário">
+			<section class="cabecalho__usuario">
+				<img class="cabecalho__usuario-foto" src="img/foto-perfil.svg" alt="Foto de perfil do usuário">
+				<h2 class="cabecalho__usuario-nome">Harry</h2>
+			</section>
 			<div class="cabecalho__botoes">
 				<img src="img/pesquisar.png" class="cabecalho__pesquisar-botao" alt="">
 				<img src="img/menu-sanduiche.png" class="cabecalho__menu-botao" alt="">
 			</div>					
 		</header>
 
-		<main class="comunidade-principal">
-			<nav class="menu">
-				<h2 class="menu__titulo sidebar-titulo">MENU</h2>
+		<div class="sidebar">
+			<nav class="menu-itens">
 				<ul class="menu__itens">
 					<a href="index.html" editor-button>
-						<li class="menu__editor-item">
+						<li class="menu__editor--index">
 							<img class="icon-menu" src="img/icon_code.png">
 							<p class="menu__editor-item-titulo menu__item-name">Editor de código</p>
 						</li>
 					</a>
 					<a href="comunidade.html" comunidade-buttom>
-						<li class="menu__comunidade-item">
+						<li class="menu__comunidade--index">
+							<img class="icon-menu" src="img/icon_users.png">
+							<p class="menu__editor-item-titulo menu__item-name">Comunidade</p>
+						</li>
+					</a> 
+					<hr>
+					<section class="sidebar__usuario">
+						<img class="foto-perfil-mini" src="img/foto-perfil.svg">
+						<h2 class="sidebar__id-usuario">Harry</h2>
+					</section>
+				</ul>	
+			</nav>
+		</div>
+
+		<main class="comunidade-principal">
+			<nav class="menu">
+				<h2 class="menu__titulo sidebar-titulo">MENU</h2>
+				<ul class="menu__itens">
+					<a href="index.html" editor-button>
+						<li class="menu__editor--comunidade">
+							<img class="icon-menu" src="img/icon_code.png">
+							<p class="menu__editor-item-titulo menu__item-name">Editor de código</p>
+						</li>
+					</a>
+					<a href="comunidade.html" comunidade-buttom>
+						<li class="menu__comunidade--comunidade">
 							<img class="icon-menu" src="img/icon_users.png">
 							<p class="menu__editor-item-titulo menu__item-name">Comunidade</p>
 						</li>
@@ -48,43 +75,17 @@
 			</nav>
 			<ul class="projetos-container">
 				<li class="projeto-item">
-					<div class="codigo-container">
-						<div class="macbuttons-editor">
-							<div class="mac">
-							<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">
-						</div>
-						<code>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</code>					
-						</div>
-					</div>
-					<div class="info-projeto">
-						<h2 class="titulo-projeto"> Sem título</h2>
-						<p class="descricao-projeto">Essa é a descrição do meu projeto.</p>
-					</div>
-					<div class="social-projeto">
-						<div class="comment-like">
-							<div class="comment">
-								<i class="fas fa-comment"></i>
-								<p class="comment-count">9</p>
-							</div>	
-							<div class="like">
-								<i class="fas fa-heart"></i>
-								<p class="like-count">9</p>
-							</div>							
-						</div>	
-						<div class="usuario">	
-							<img class="foto-perfil-mini" src="img/foto-perfil-mini.png">
-							<p class="id-usuario">@Harry</p>
-						</div>	
-					</div>
-					</div>
-				</li>
-				<li class="projeto-item">
 					<div class="codigo-container cartao1">
 						<div class="macbuttons-editor">
 							<div class="mac">
-							<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">
+							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
 						</div>
-						<code>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</code>					
+						<pre><code class="editor-codigo hljs javascript language-javascript">const const
+							const
+							const
+							const
+						</code></pre>
+						</pre>			
 						</div>
 					</div>
 					<div class="info-projeto">
@@ -98,12 +99,12 @@
 								<p class="comment-count">9</p>
 							</div>	
 							<div class="like">
-								<i class="fas fa-heart"></i>
-								<p class="like-count">9</p>
+								<img class="like__icone" src="img/favorite_icon.svg">
+								<p class="like__contagem">9</p>
 							</div>							
 						</div>	
 						<div class="usuario">	
-							<img class="foto-perfil-mini" src="img/foto-perfil-mini.png">
+							<img class="foto-perfil-mini" src="img/foto-perfil-mini.svg">
 							<p class="id-usuario">@Harry</p>
 						</div>	
 					</div>
@@ -113,9 +114,19 @@
 					<div class="codigo-container cartao2">
 						<div class="macbuttons-editor">
 							<div class="mac">
-							<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">
+							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
 						</div>
-						<code>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</code>					
+						<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+							const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+							
+							const unfold = (f, seed) => {
+							  const go = (f, seed, acc) => {
+								const res = f(seed)
+								return res ? go(f, res[1], acc.concat([res[0]])) : acc
+							  }
+							  return go(f, seed, [])
+							}</code>					
 						</div>
 					</div>
 					<div class="info-projeto">
@@ -129,12 +140,12 @@
 								<p class="comment-count">9</p>
 							</div>	
 							<div class="like">
-								<i class="fas fa-heart"></i>
-								<p class="like-count">9</p>
+								<img class="like__icone" src="img/favorite_icon.svg">
+								<p class="like__contagem">9</p>
 							</div>							
 						</div>	
 						<div class="usuario">	
-							<img class="foto-perfil-mini" src="img/foto-perfil-mini.png">
+							<img class="foto-perfil-mini" src="img/foto-perfil-mini.svg">
 							<p class="id-usuario">@Harry</p>
 						</div>	
 					</div>
@@ -144,9 +155,19 @@
 					<div class="codigo-container cartao3">
 						<div class="macbuttons-editor">
 							<div class="mac">
-							<img class="mac-img" src="img/buttons.png" alt="Botões do Mac">
+							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
 						</div>
-						<code>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</code>					
+						<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+							const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+							
+							const unfold = (f, seed) => {
+							  const go = (f, seed, acc) => {
+								const res = f(seed)
+								return res ? go(f, res[1], acc.concat([res[0]])) : acc
+							  }
+							  return go(f, seed, [])
+							}</code>					
 						</div>
 					</div>
 					<div class="info-projeto">
@@ -160,12 +181,53 @@
 								<p class="comment-count">9</p>
 							</div>	
 							<div class="like">
-								<i class="fas fa-heart"></i>
-								<p class="like-count">9</p>
+								<img class="like__icone" src="img/favorite_icon.svg">
+								<p class="like__contagem">9</p>
 							</div>							
 						</div>	
 						<div class="usuario">	
-							<img class="foto-perfil-mini" src="img/foto-perfil-mini.png">
+							<img class="foto-perfil-mini" src="img/foto-perfil-mini.svg">
+							<p class="id-usuario">@Harry</p>
+						</div>	
+					</div>
+					</div>
+				</li>
+				<li class="projeto-item">
+					<div class="codigo-container cartao4">
+						<div class="macbuttons-editor">
+							<div class="mac">
+							<img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
+						</div>
+						<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+							const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+							
+							const unfold = (f, seed) => {
+							  const go = (f, seed, acc) => {
+								const res = f(seed)
+								return res ? go(f, res[1], acc.concat([res[0]])) : acc
+							  }
+							  return go(f, seed, [])
+							}</code>					
+						</div>
+					</div>
+					<div class="info-projeto">
+						<h2 class="titulo-projeto"> Sem título</h2>
+						<p class="descricao-projeto">Essa é a descrição do meu projeto.</p>
+					</div>
+					<div class="social-projeto">
+						<div class="comment-like">
+							<div class="comment">
+								<i class="fas fa-comment"></i>
+								<p class="comment-count">9</p>
+							</div>	
+							<div class="like">
+								<img class="like__icone" src="img/favorite_icon.svg">
+								<p class="like__contagem">9</p>
+							</div>							
+						</div>	
+						<div class="usuario">	
+							<img class="foto-perfil-mini" src="img/foto-perfil-mini.svg">
 							<p class="id-usuario">@Harry</p>
 						</div>	
 					</div>
@@ -173,8 +235,10 @@
 				</li>
 			</ul>
 		</main>
-		<script type="text/javascript" src="index.js"></script>
-
+		<script type="text/javascript" src="javascript/cabecalhoBotoes.js"></script>
+		<script type="text/javascript" src="javascript/registrarLike.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+		<script>hljs.highlightAll()</script>
 	</body>
 
 </html>
