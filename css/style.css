@@ -9,14 +9,14 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
-.editor-container {
+.editor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 50%;
 }
 
-.fundo-editor {
+.editor__fundo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -38,27 +38,38 @@ body {
 	height:20px;
 }
 
-.fundo-editor .editor-codigo, .codigo-wrapper {
+.editor__wrapper {
 	width: 100%;
 	height: 100%;
 	background-color: #292936;
 	border: none;
 	border-radius: 0px 0px 5px 5px;
-	color: white;
 	display: block;
 	margin: 0 auto;
 	resize: none;
 	padding: 5px;
 	font-size: 1.1em;
-}
-
-.codigo-wrapper {
 	overflow-y: auto;
-	padding: 20px 0 0 20px;
+	line-height: 30px;
 }
 
-.editor-codigo {
+pre {
+	width: 100%;
+	height: 100%;
+}
+
+.editor__codigo {
+	background-color: #292936;
+	color: white;
 	white-space: pre-wrap;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.editor__codigo:focus {
+	border: none;
+	outline: none;
 }
 
 .botao-visualizarMarcacao {
@@ -141,7 +152,7 @@ body {
 	width: 100%;
 }
 
-.personalizacao-select option {
+option {
 	color: #CCC;
 	background: #051D3B;
 }
@@ -184,7 +195,7 @@ body {
 		flex-direction: column;
 		align-items: center;
 	}
-	.editor-container, .configuracoes-projeto {
+	.editor, .configuracoes-projeto {
 		width: 100%;
 	}
 
@@ -213,12 +224,12 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-	.editor-container {
+	.editor {
 		height: calc(100vh - 120px);
 		justify-content: space-around;
 	}
 	
-	.fundo-editor {
+	.editor__fundo {
 		height: 80%;
 	}
 
