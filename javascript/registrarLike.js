@@ -11,11 +11,11 @@ like.forEach(function (elem) {
 
     if (foiCurtido) {
       contagem.innerText = contador - 1
-      icone.src = 'img/favorite_icon.svg'
+      icone.src = 'img/favorito-icone.svg'
       foiCurtido = false
     } else {
       contagem.innerText = contador + 1
-      icone.src = 'img/favorite_icon_toggle.svg'
+      icone.src = 'img/favorito-icone-toggle.svg'
       foiCurtido = true
     }
   })
