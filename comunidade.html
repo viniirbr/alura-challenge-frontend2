@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>All Dev</title>
+	<link rel="icon" href="img/tab-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/seaside.css">
 	<script src="https://kit.fontawesome.com/467b64bc8b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/reset.css">
@@ -15,12 +16,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/comunidade.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	</head>
 
 	<body>
 		<header class="cabecalho">
-			<img class="cabecalho__logo" src="img/logo.svg" alt="Logotipo da All Dev">
+			<a href="index.html"><img class="cabecalho__logo" src="img/logo.svg" alt="Logotipo da All Dev"></a>
 			<input class="cabecalho__pesquisa-input text-input" type="text" name="pesquisa" placeholder="Busque por algo">
 			<section class="cabecalho__usuario">
 				<img class="cabecalho__usuario-foto" src="img/foto-perfil.svg" alt="Foto de perfil do usuário">
@@ -109,7 +110,11 @@ return go(f, seed, [])
 							<div class="like">
 								<img class="like__icone" src="img/favorito-icone.svg">
 								<p class="like__contagem">9</p>
-							</div>							
+							</div>	
+							<div class="exportar">	
+								<i class="fas fa-download"></i>
+								<p class="exportar-title">Exportar</p>
+							</div>						
 						</div>	
 						<div class="usuario">	
 							<img class="foto-perfil-mini" src="img/foto-perfil-mini.svg">
@@ -150,6 +155,10 @@ return go(f, seed, [])
 							<div class="like">
 								<img class="like__icone" src="img/favorito-icone.svg">
 								<p class="like__contagem">9</p>
+							</div>
+							<div class="exportar">	
+								<i class="fas fa-download"></i>
+								<p class="exportar-title">Exportar</p>
 							</div>							
 						</div>	
 						<div class="usuario">	
@@ -191,6 +200,10 @@ return go(f, seed, [])
 							<div class="like">
 								<img class="like__icone" src="img/favorito-icone.svg">
 								<p class="like__contagem">9</p>
+							</div>
+							<div class="exportar">	
+								<i class="fas fa-download"></i>
+								<p class="exportar-title">Exportar</p>
 							</div>							
 						</div>	
 						<div class="usuario">	
@@ -239,6 +252,10 @@ div {
 							<div class="like">
 								<img class="like__icone" src="img/favorito-icone.svg">
 								<p class="like__contagem">9</p>
+							</div>
+							<div class="exportar">	
+								<i class="fas fa-download"></i>
+								<p class="exportar-title">Exportar</p>
 							</div>							
 						</div>	
 						<div class="usuario">	
