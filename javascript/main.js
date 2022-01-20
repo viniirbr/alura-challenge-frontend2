@@ -1,5 +1,8 @@
+import { saveProject } from "./saveProject.js"
+
 const border = document.querySelector('.editor__fundo')
 const inputColor = document.querySelector('.input-color')
+const saveButton = document.querySelector('.botao-salvar')
 
 setColor()
 inputColor.addEventListener('input', setColor)
@@ -23,4 +26,6 @@ function aplicarHighlight() {
 botao.addEventListener('click', ()=> {
 	aplicarHighlight()
 })
+
+saveButton.addEventListener('click', saveProject())
 
