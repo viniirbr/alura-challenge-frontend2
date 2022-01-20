@@ -27,5 +27,5 @@ botao.addEventListener('click', ()=> {
 	aplicarHighlight()
 })
 
-saveButton.addEventListener('click', saveProject())
+saveButton.addEventListener('click', saveProject)
 

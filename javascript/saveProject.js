@@ -1,4 +1,5 @@
 export const saveProject = () => {
+    console.log('funcao ativada')
     const savedCards = JSON.parse(localStorage.getItem('cards')) || []
     const projectNameInput  = document.querySelector('.seuProjeto__nome')
     const projectDescriptionInput  = document.querySelector('.seuProjeto__descricao')
@@ -10,14 +11,18 @@ export const saveProject = () => {
     const projectDescription = projectDescriptionInput.value
     const projectLanguage = projectLanguageInput.value
     const projectColor = projectColorInput.value
-    const projectCode = projectCodeInput.value
+    const projectCode = projectCodeInput.innerText
+    const likeCount = 0
+    const commentCount = 0
 
     const cardData = {
         projectName,
         projectDescription,
         projectLanguage,
         projectColor,
-        projectCode
+        projectCode,
+        likeCount,
+        commentCount
     }
 
     const updatedCards = [...savedCards, cardData]
