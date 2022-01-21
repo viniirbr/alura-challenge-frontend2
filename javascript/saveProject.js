@@ -1,5 +1,4 @@
 export const saveProject = () => {
-    console.log('funcao ativada')
     const savedCards = JSON.parse(localStorage.getItem('cards')) || []
     const projectNameInput  = document.querySelector('.seuProjeto__nome')
     const projectDescriptionInput  = document.querySelector('.seuProjeto__descricao')

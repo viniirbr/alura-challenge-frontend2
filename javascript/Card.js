@@ -8,8 +8,7 @@ export const Card = ({ projectName, projectDescription, projectLanguage, project
             <img class="mac-img" src="img/mac_buttons.svg" alt="Botões do Mac">
             </div>
             <div class="editor__wrapper">
-                <pre><code class="editor__codigo hljs ${projectLanguage}">
-                ${projectCode}
+                <pre><code class="editor__codigo hljs ${projectLanguage}"><xmp>${projectCode}</xmp>
             </code></pre>	
             </div>
         </div>		
@@ -29,7 +28,7 @@ export const Card = ({ projectName, projectDescription, projectLanguage, project
                 <img class="like__icone" src="img/favorito-icone.svg">
                 <p class="like__contagem">${likeCount}</p>
             </div>	
-            <div class="exportar">	
+            <div class="exportar" onclick="exportCode(${id})">	
                 <i class="fas fa-download"></i>
                 <p class="exportar-title">Exportar</p>
             </div>						

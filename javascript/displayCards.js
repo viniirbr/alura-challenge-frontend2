@@ -6,6 +6,7 @@ export const displayCards = () => {
     
     cards.forEach((card, id) => {
         projects.appendChild(Card(card, id))
+        console.log(id)
     });
 }
 
