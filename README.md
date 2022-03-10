@@ -26,7 +26,7 @@
 
 
 ## 📓Meu processo
-O projeto foi constrúido a partir de um design no Figma e de tarefas definidas no Trello pelos orientadores da Alura. 
+O projeto foi construído a partir de um design no Figma e de tarefas definidas no Trello pelos orientadores da Alura. 
 
 ## 🚧Futuras melhorias
 - Refatorar o código e reorganizar os arquivos;
